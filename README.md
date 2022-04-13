@@ -1,41 +1,70 @@
+# Getting Started with Create React App
 
-Refer to this repository to apply for free crust storage specifically for developers and this hackathon. [Github Repo](https://github.com/crustio/free-storage)
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-Video demo: [link](https://drive.google.com/file/d/1QqfHWOrBblI-qYQEgO1GR4KOrTCRZb7d/view?usp=sharing)
+## Available Scripts
 
-# Steps to run the CRUST App
+In the project directory, you can run:
 
-1. Fork the repository<br>
-2. Install go-ipfs from https://dist.ipfs.io/#go-ipfs<br>
-3. Extract the downloaded files and add the go-ipfs directory PATH to system environment varibles<br>
-4. Open a terminal window and execute<br>
-```ipfs init```<br>
-5. Open another terminal and execute the following to start the daemon server<br>
-```ipfs daemon```<br>
-6. Once the daemon server is up and running go to the local project directory and install the dependencies using the following code<br>
-```npm i```<br>
-7. Now run index.js<br>
-```node index.js```<br>
-Note: In case there's a dependency error regarding node-fetch package, ececute the following<br>
-```npm i node-fetch@2```<br>
-8. Go to localhost:3000 on a browser to view the build.
-9. Upload a file by providing a file name and submit the form.
-10. The submission will make a POST request to the IPFS server and return a cid on the screen.
+### `npm start`
 
-# Steps to setup the CRUST Wallet
-1. Install the CRUST wallet extension from https://chrome.google.com/webstore/detail/crust-wallet/jccapkebeeiajkkdemacblkjhhhboiek?hl=en
-2. Create an account as guided by the extension.
-3. Save your seed in a text file.
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-# Steps for storing a file on the CRUST network
-1. Replace the *fileCid* variable in *crust.js* file with the cid generated through ipfs.
-2. Also replace the seed value named as *krp* in *crust.js* file with your seed you saved during CRUST wallet installation.
-3. Now run the file using<br>
-```node crust.js```<br>
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-# Notion Link for reference
-[Link](https://amanv2k.notion.site/amanv2k/hacKnight-e6db104a46cf40c8a87488433d753414)
+### `npm test`
 
-# Resources
-1. https://wiki.crust.network/docs/en/build101
-2. https://www.youtube.com/watch?v=1Ud4HJNak4M&t=425s&ab_channel=zapppelphilippp
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+
+### `npm run build`
+
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
+
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
+
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+### `npm run eject`
+
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
