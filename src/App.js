@@ -1,17 +1,24 @@
-import './App.css';
 import { BrowserRouter as Router, Routes, Route, useRoutes } from "react-router-dom";
 
+import Header from './Components/common/Header';
+import Footer from './Components/common/Footer'
+
 import FileInput from './Components/FileInput';
-import Header from './Components/Header';
-import Home from './Components/Home';
-import NoPage from './Components/NoPage';
+import Home from './Components/home_page/Home';
+import NoPage from './Components/no_page/NoPage';
 import Download from './Components/Download';
+
+{/* HOWLSAFE : A mobile digital solution to tedious and insecure
+                            applications for sensitive data storage, retrieval, sharing and
+                            transactions
+*/}
 
 
 function App() {
   return (
-    <div className="App">
+    <div>
       <Header />
+      
       <Router>
         <Routes>
           <Route exact path='/' element={<Home />}></Route>
@@ -21,6 +28,9 @@ function App() {
           <Route path="*" element={<NoPage />}></Route>
         </Routes>
       </Router>
+
+      <Footer />
+
     </div>
   );
 }

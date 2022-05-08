@@ -1,0 +1,95 @@
+.parallax1 {
+  background-image: url("img/stars.png");
+  min-height: 600px;  
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-bottom: 0px;
+}
+
+.parallaxbg1 {
+  background-color: white;
+  opacity: 80%;
+  height: 600px;
+  width: 30%;
+  margin-left: 100px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
+<div class="row mt-5">
+      <div class="col-4"></div>
+      <div class="col-4">
+        <form>
+          <!-- Email input -->
+          <div class="form-outline mb-4 md-outline">
+            <input
+              type="text"
+              id="form1Example2"
+              class="form-control"
+              name="fileName"
+            />
+            <label class="form-label" for="form1Example1">File Name</label>
+          </div>
+
+          <!-- Password input -->
+          <div class="form-outline mb-4">
+            <input
+              type="file"
+              id="form1Example2"
+              class="form-control"
+              name="file"
+            />
+            <label class="form-label text-white" for="form1Example2"
+              >Choose File</label
+            >
+          </div>
+
+          <!-- 2 column grid layout for inline styling -->
+          <div class="row mb-4">
+            <div class="col d-flex justify-content-center"></div>
+          </div>
+          <!-- Submit button -->
+          <p class="btn btn-primary btn-block">
+            Link:
+            <a href="https://ipfs.io/ipfs/<%= fileHash %>"
+              ><%= fileHash %> <%= size %></a
+            >
+          </p>
+        </form>
+      </div>
+      <div class="col-4"></div>
+    </div>
+
+  fksmdfkjdnfdsfsdfdsfdsfkmsdlfk
+  <div className="col-4">
+          <form onSubmit="{handleSubmit(onSubmit)}">
+            {/* Ethereum Private key input */}
+            <div className="form-outline mb-4">
+              <input type="text" name='private' className="form-control"
+              placeholder='Ethereum Private Key' value={key} onChange={(e) =>
+              setKey(e.target.value)}/>
+            </div>
+            <div className="form-outline mb-4">
+              <input type="password" name='privatePass' className="form-control"
+              placeholder='Ethereum Private Key mnemonic' value={keyPass}
+              onChange={(e) => setKeyPass(e.target.value)}/>
+            </div>
+            {/* File name input */}
+            <div className="form-outline mb-4">
+              <input type="text" name='filename' className="form-control"
+              placeholder='File Name' value={name} onChange={(e) =>
+              setName(e.target.value)}/>
+            </div>
+            {/* File input */}
+            <div className="form-outline mb-4">
+              <input type="file" name='file' className="form-control"
+              placeholder='Choose File' {...register("fileData")}/>
+            </div>
+            {/* Submit button */}
+            <button type="submit" className="btn btn-primary btn-block">
+              Upload Document
+            </button>
+          </form>
+        </div>
